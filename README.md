@@ -1,34 +1,28 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 style="text-align:center">Frontend Mentor Starter Template with Storybook</h1>
 
-## Getting Started
+Welcome to the Frontend Mentor (FEM) starter template. This template combines Next.js with Storybook integration.
 
-First, run the development server:
+## Commit Message Prefixes
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+For smooth version control, consider using these commit message prefixes:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- `feat` – when incorporating new features
+- `fix` – addressing and resolving bugs
+- `chore` – non-feature/fix changes (e.g., dependency updates)
+- `refactor` – code improvements without bug fixes or new features
+- `docs` – updates to project documentation
+- `style` – changes related to code styling and formatting
+- `perf` – optimizations for improved performance
+- `ci` – configurations related to continuous integration
+- `build` – changes affecting the build system or external dependencies
+- `revert` – reverting a previous commit
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Frontend Guidelines
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Simplicity is key:
 
-## Learn More
+- Write clean, well-documented, and maintainable code.
+- Prioritize responsive and accessible designs.
+- Rigorously test your components to ensure they align with the unique requirements of each FEM challenge.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+With this FEM starter template and Storybook integration, you're well-prepared to tackle any Frontend Mentor challenge with confidence. Happy coding!
