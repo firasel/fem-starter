@@ -34,3 +34,6 @@ jobs:
 
       - name: Linting
         run: npm run lint
+
+      - name: Code Formatting
+        run: npm run prettier
