@@ -3,6 +3,7 @@
 Welcome to the Frontend Mentor (FEM) starter template. This template combines Next.js with Storybook integration.
 
 ## Commit Message Prefixes
+
 For smooth version control, consider using these commit message prefixes:
 
 - `feat` – when incorporating new features
@@ -17,6 +18,7 @@ For smooth version control, consider using these commit message prefixes:
 - `revert` – reverting a previous commit
 
 ## Frontend Guidelines
+
 Simplicity is key:
 
 - Write clean, well-documented, and maintainable code.
