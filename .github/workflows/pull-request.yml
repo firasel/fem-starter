@@ -1,0 +1,39 @@
+name: PR Checks
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+# Ensure that multiple workflow runs on the same pull request are canceled
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  pr-checks:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18.x]
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # Fetch the entire git history for comprehensive checks
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: TypeScript Compilation
+        run: npm run tsc
+
+      - name: Linting
+        run: npm run lint
+
+      - name: Code Formatting
+        run: npm run prettier
